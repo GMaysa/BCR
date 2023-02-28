@@ -1,0 +1,57 @@
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+:root {
+    --color-primary: #5CB85F;
+
+    --color-bg1: #0D28A6;
+    --color-bg2: #F1F3FF;
+
+    --color-ic-yellow: #F9CC00;
+    --color-ic-red: #FA2C5A;
+    --color-ic-black: #222222;
+
+    --border: 1px solid #D4D4D4;
+
+    --transition: 350ms ease;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    padding: 8px 12px;
+    border-radius: 2px;
+    color: #fff;
+}
+
+/* ========== NAVBAR ========== */
+
+.navbar{
+    display: flex;
+}
+
+.navbar .nav__link {
+    font-size: 14px;
+    height: 100%;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .nav__link .link{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ////////// MEDIA QUERY ////////// */
+@media only screen and (max-width: 640px){
+    .navbar {
+        display: none;
+    }
+    
+}
